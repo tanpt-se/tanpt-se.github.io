@@ -1,6 +1,6 @@
 "use client";
 
-import { Experience, Footer, Header, HeroBanner, HomeSummary, Project, Sidebar } from "@/components";
+import { Experience, Footer, Header, HeroBanner, HomeSummary, Project, Sidebar, SkillChart } from "@/components";
 
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       <HomeSummary />
       <Experience />
       <Project />
+      <SkillChart />
       <Footer />
     </div>
   );

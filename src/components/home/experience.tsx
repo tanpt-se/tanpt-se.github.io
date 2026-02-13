@@ -42,7 +42,7 @@ export default function Experience() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="w-full min-h-[90vh] py-32 flex flex-col items-center justify-center bg-gray-50 overflow-hidden">
+        <section className="w-full h-screen flex flex-col items-center justify-center bg-gray-50 overflow-hidden">
             <div className="w-full max-w-[1700px] px-6 md:px-12 lg:px-32 mx-auto flex flex-col items-center">
                 <h2 className="text-3xl md:text-6xl font-bold mb-20 tracking-widest uppercase font-sans text-center text-gray-950">
                     Education & Experience
