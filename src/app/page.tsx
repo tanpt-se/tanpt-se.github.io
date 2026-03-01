@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Experience, Footer, Header, HeroBanner, HomeSummary, LoadingScreen, Project, Sidebar, SkillChart } from "@/components";
+import { Experience, Footer, Header, HeroBanner, HomeSummary, LoadingScreen, Project, Sidebar, SkillChart, DemoProject } from "@/components";
 import { AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +31,7 @@ export default function Home() {
         <Experience />
         <Project />
         <SkillChart />
+        <DemoProject />
         <Footer />
       </div>
     </>

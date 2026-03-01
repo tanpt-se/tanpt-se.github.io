@@ -1,6 +1,7 @@
 import Chatbot from "./chatbot";
 import Footer from "./footer";
 import Header from "./header";
+import DemoProject from './home/demo-project';
 import Experience from "./home/experience";
 import HeroBanner from "./home/hero-banner";
 import Project from "./home/project";
@@ -12,8 +13,7 @@ import { Highlight } from "./ui/highlight";
 import { MarqueeText } from "./ui/marquee-text";
 
 export {
-    Chatbot,
-    Experience,
+    Chatbot, DemoProject, Experience,
     Footer,
     Header,
     HeroBanner,
