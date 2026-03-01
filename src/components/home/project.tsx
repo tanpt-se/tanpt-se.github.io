@@ -50,12 +50,12 @@ export default function Project() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <section className="w-full h-screen bg-background flex flex-col pt-32 pb-16 px-6 lg:px-32 overflow-hidden">
+        <section className="w-full h-screen bg-background flex flex-col pt-32 pb-16 px-6 lg:px-32 snap-start snap-always">
             <div className="w-full max-w-[1700px] mx-auto flex flex-col h-full">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    className="text-4xl md:text-7xl font-bold mb-16 tracking-widest uppercase font-sans text-gray-950 dark:text-white"
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-4xl md:text-7xl font-bold mb-16 tracking-widest uppercase font-sans text-foreground"
                 >
                     Projects
                 </motion.h2>

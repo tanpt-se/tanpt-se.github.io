@@ -170,14 +170,14 @@ export default function SkillChart() {
     }, []);
 
     return (
-        <section className="w-full h-screen bg-background flex flex-col pt-32 pb-16 px-6 lg:px-32 overflow-hidden">
+        <section className="w-full h-screen bg-background flex flex-col pt-32 pb-16 px-6 lg:px-32 snap-start snap-always">
             <div className="w-full max-w-[1700px] mx-auto flex flex-col h-full">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div>
                         <motion.h2
                             initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            className="text-4xl md:text-7xl font-bold tracking-widest uppercase font-sans text-gray-950 dark:text-white mb-4"
+                            animate={{ opacity: 1, x: 0 }}
+                            className="text-4xl md:text-7xl font-bold tracking-widest uppercase font-sans text-foreground mb-4"
                         >
                             Skill Chart
                         </motion.h2>

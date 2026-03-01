@@ -21,10 +21,9 @@ const certificates = [
 
 export const HomeSummary = () => {
     return (
-        <>
+        <div className="w-full min-h-screen flex flex-col bg-gray-50 snap-start snap-always">
             <MarqueeText items={skills} direction="left" />
-            <section className="w-full bg-gray-50 py-24 flex flex-col items-center justify-center">
-
+            <section className="flex-1 flex flex-col items-center justify-center py-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +37,6 @@ export const HomeSummary = () => {
                 </motion.div>
             </section>
             <MarqueeText items={certificates} direction="right" />
-        </>
-
+        </div>
     );
 };
